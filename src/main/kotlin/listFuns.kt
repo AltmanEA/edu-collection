@@ -21,6 +21,6 @@ val grades: List<Grade> = listOf(
     Grade(students.find { it.name == grade.first }!!, grade.second)
 }
 
-val averageGrade = grades.fold(0, {
-        acc, grade -> acc+grade.value
+val averageGrade = grades.fold(0, { acc, grade ->
+    acc + grade.value
 }) / grades.size
