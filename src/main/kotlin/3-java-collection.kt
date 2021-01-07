@@ -26,5 +26,11 @@ val treeSet = TreeSet<Int>()
 val hashSet = HashSet<Int>()
 val linkedHashSet = LinkedHashSet<Int>()
 
-
+fun main(){
+    println(examQueue)
+    takeStudent()
+    println(examQueue)
+    admitStudent(students[4])
+    println(examQueue)
+}
 

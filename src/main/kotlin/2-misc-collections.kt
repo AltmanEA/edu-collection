@@ -32,5 +32,11 @@ val newGrades: Map<String, Int> = mapOf(
     "Raj" to 3
 )
 
-
+fun main(){
+    println(students.iterator().str())
+    println(studyingStudent)
+    println(studyingStudentSet)
+    println(otherStudent)
+    println(newGrades["Sheldon"])
+}
 
