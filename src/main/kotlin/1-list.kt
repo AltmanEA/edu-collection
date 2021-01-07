@@ -33,3 +33,12 @@ val minReduce = grades
         else
             grade
     }
+
+// lab
+
+val nameLength = students.mapIndexed { index, _ -> index }
+    .zip(students)
+
+val studentsString = nameLength.joinToString {
+    "${it.first}  - ${it.second}"
+}
