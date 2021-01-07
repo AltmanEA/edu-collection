@@ -18,8 +18,4 @@ fun main() {
     println(examQueue)
     admitStudent(students[4])
     println(examQueue)
-
-    println("\n\t\tlab list")
-    println(nameLength)
-    println(studentsString)
 }
