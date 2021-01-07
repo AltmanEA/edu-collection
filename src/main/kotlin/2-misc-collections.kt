@@ -25,12 +25,18 @@ val studyingStudentSet: Set<Student> = courses.flatMapTo(HashSet()) { it.student
 
 val otherStudent = students - studyingStudentSet
 
-val newGrades = mapOf(
+val newGrades: Map<String, Int> = mapOf(
     "Sheldon" to 5,
     "Leonard" to 4,
     "Howard" to 4,
     "Raj" to 3
 )
 
-
+fun main(){
+    println(students.iterator().str())
+    println(studyingStudent)
+    println(studyingStudentSet)
+    println(otherStudent)
+    println(newGrades["Sheldon"])
+}
 

@@ -33,3 +33,10 @@ val minReduce = grades
         else
             grade
     }
+
+fun main(){
+    println(groups)
+    println(grades)
+    println(averageGradeFold)
+    println(minReduce)
+}
