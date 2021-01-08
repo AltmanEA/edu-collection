@@ -34,9 +34,12 @@ val minReduce = grades
             grade
     }
 
+val sortedGrades = grades.sortedBy { it.value }
+
 fun main(){
     println(groups)
     println(grades)
     println(averageGradeFold)
     println(minReduce)
+    println(sortedGrades)
 }
