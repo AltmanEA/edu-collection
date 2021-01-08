@@ -4,16 +4,19 @@ import kotlin.collections.HashSet
 import kotlin.collections.LinkedHashSet
 
 val allStudent: List<Student> = LinkedList(students)
-val examQueue: Queue<Student> = LinkedList(allStudent.subList(0,3))
-
-fun takeStudent() =
-    examQueue.poll()
-
-fun admitStudent(student: Student) =
-    examQueue.add(student)
 
 fun newStudent(student: Student) =
     (allStudent as MutableList).add(student) // unsafe !
+
+val examQueue: Queue<Student> = LinkedList(allStudent.subList(0,3))
+
+fun main(){
+    println(examQueue)
+    println(examQueue.poll())
+    println(examQueue)
+    println(examQueue.offer(students[4]))
+    println(examQueue)
+}
 
 val arrayList = ArrayList<Int>()
 
@@ -25,12 +28,4 @@ val linkedHashMap = LinkedHashMap<Int, Int>()
 val treeSet = TreeSet<Int>()
 val hashSet = HashSet<Int>()
 val linkedHashSet = LinkedHashSet<Int>()
-
-fun main(){
-    println(examQueue)
-    takeStudent()
-    println(examQueue)
-    admitStudent(students[4])
-    println(examQueue)
-}
 
